@@ -10,11 +10,16 @@ public class Main {
             System.out.println(r1.getArea());
             System.out.println(r1.getCentrePoint().toString());
 
-            Circle c1 = new Circle("c1", "white", 90,80,100);
+            Circle c = new Circle ("circle1", "red", 0,0, 10);
+            Circle c2 = new Circle ("circle2", "blue", 10,10, 5);
 
-            System.out.println(c1.toString());
-            System.out.println(c1.getArea());
-            System.out.println(c1.getCentrePoint().toString());
+            System.out.println(c);
+            System.out.println(c2);
+            System.out.println("Circle location before move: " + c.getCurrentLocation());
+
+            c.move(10.5, 4.3);
+
+             System.out.println("Circle location after move: " + c.getCurrentLocation());
 
         }
 }
